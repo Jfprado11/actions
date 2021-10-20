@@ -27,5 +27,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: DB=${{secrets.DB}} HOST=${{secrets.HOST}} PASSWORD_DB=${{secrets.PASSWORD_DB}} USER_DB=${{secrets.USER_DB}} npm build
     - run: npm test
